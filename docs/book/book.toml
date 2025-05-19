@@ -1,0 +1,17 @@
+[book]
+title = "jco"
+authors = ["Bytecode Alliance contributors"]
+language = "en"
+multilingual = false
+
+src = "src"
+
+[build]
+build-dir = "dist"
+
+[output.html]
+git-repository-url = "https://github.com/bytecodealliance/jco"
+
+[preprocessor.alerts]
+
+[output.linkcheck]
