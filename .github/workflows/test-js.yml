@@ -36,6 +36,7 @@ jobs:
         run: npm install
 
   run:
+    name: ${{ matrix.script }}
     runs-on: ubuntu-latest
     needs:
       - deps
