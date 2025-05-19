@@ -1,5 +1,5 @@
 [book]
-title = "jco"
+title = "new-project" # TODO: fill in your project name
 authors = ["Bytecode Alliance contributors"]
 language = "en"
 multilingual = false
@@ -10,7 +10,7 @@ src = "src"
 build-dir = "dist"
 
 [output.html]
-git-repository-url = "https://github.com/bytecodealliance/jco"
+git-repository-url = "https://github.com/bytecodealliance/<your project>" # TODO: fill in your project name
 
 [preprocessor.alerts]
 
