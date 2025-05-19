@@ -63,7 +63,7 @@ jobs:
         id: cache-node-modules
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
-          key: node-modules-dev-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('js/package.json') }}
+          key: node-modules-dev-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('js/package-lock.json') }}
           path: |
             node_modules
       - name: Install debug NPM packages
@@ -87,7 +87,7 @@ jobs:
           case $PROJECT in
             js/example-js)
               export PROJECT_DIR="$PWD/js/packages/example-js";
-              export CURRENT_VERSION=$(node -e "process.stdout.write(require(process.env.PROJECT_DIR + '/package.json').version)");
+              export CURRENT_VERSION=$(node -e "process.stdout.write(require(process.env.PROJECT_DIR + '/package-lock.json').version)");
               export IS_JS_PROJECT=true;
               ;;
             *)
