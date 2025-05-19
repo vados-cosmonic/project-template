@@ -9,12 +9,14 @@ This repository serves as a template for creating projects with a few features a
 - Automated testing
 - [Dependabot][dependabot] configuration
 - [mdbook][mdbook] based documentation, hosted by [GitHub Pages][gh-pages]
+- [`git-cliff`][git-cliff] for fully customizable release notes generation and templating
 
 [gha]: https://docs.github.com/actions
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [dependabot]: https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide
 [mdbook]: https://github.com/rust-lang/mdBook
 [gh-pages]: https://pages.github.com/
+[git-cliff]: https://github.com/orhun/git-cliff
 
 ## How to use this template
 
@@ -22,6 +24,7 @@ This repository serves as a template for creating projects with a few features a
 2. Remove language folders that your project *does not* use.
 3. Customize [GitHub Actions workflows](./.github/workflows)
 4. (optional) Set up any required external accounts to enable release CI
+  - You may need to add repo-scoped secrets (e.g. `RELEASE_PAT`)
 
 For more information on automated CI, see `docs/meta/automated-releases.md`.
 

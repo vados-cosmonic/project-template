@@ -2,6 +2,7 @@ name: lint
 
 on:
   merge_group:
+
   pull_request:
     branches:
       - main
@@ -21,19 +22,23 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
 
+      # Install NPM requirements for scripts
       - name: Cache npm install
         id: cache-node-modules
+        working-directory: scripts
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
-          key: node-modules-dev-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('package.json') }}
+          key: node-modules-scripts-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/package.json') }}
           path: |
             node_modules
       - name: Install debug NPM packages
+        working-directory: scripts
         run: |
           npm install -D
 
       - name: Validate PR commits with commitlint
         id: cc
+        working-directory: scripts
         env:
           COMMITLINT_START_REF: ${{ github.event.pull_request.base.sha || 'HEAD^' }}
           COMMITLINT_END_REF: ${{ github.event.pull_request.head.sha || 'HEAD' }}
