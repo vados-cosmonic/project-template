@@ -68,6 +68,7 @@ jobs:
             js/node_modules
       - name: Install debug NPM packages
         if: ${{ startsWith(inputs.project, 'js/') }}
+        working-directory: js
         run: |
           npm install -D
 
