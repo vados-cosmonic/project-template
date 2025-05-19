@@ -1,0 +1,31 @@
+# Editors
+.vscode
+*.swp
+*.swo
+
+# Generated ouput
+/target
+/dist
+/jco.sh
+
+# Typescript
+/src/**/*.d.ts
+/src/**/*.d.ts.map
+
+# Docs
+/docs/book
+
+# Package management
+node_modules
+package-lock.json
+pnpm-lock.yaml
+
+# Test output
+crates/jco/tests/rundir
+crates/jco/tests/output
+crates/jco/tests/gen
+test/fixtures/modules/hello_stdout.component.wasm
+
+# Jco
+packages/jco/obj
+packages/jco/test/output

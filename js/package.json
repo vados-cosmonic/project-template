@@ -1,0 +1,15 @@
+{
+  "name": "workspace",
+  "workspaces": [
+    "packages/example-js"
+  ],
+  "scripts": {
+    "build": "npm run build --ws",
+    "lint": "npm run lint --ws --if-present",
+    "lint:fix": "npm run lint --ws --if-present -- --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0",
+    "eslint-plugin-prettier": "^5.4.0"
+  }
+}
