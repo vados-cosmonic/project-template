@@ -2,9 +2,10 @@
 
 This folder contains all subprojects written in Javascript.
 
-As this folder is an [NPM workspace][npm-workspace], you can run commands to build and test projects directly:
+As this folder is an [NPM workspace][npm-workspace], you can run commands to build and test projects all at once:
 
 ```console
+npm install
 npm run lint
 npm run build
 npm run test
