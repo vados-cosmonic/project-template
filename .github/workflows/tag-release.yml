@@ -14,19 +14,17 @@ on:
       project:
         type: choice
         required: true
-        default: "jco"
+        default: "js/example-js"
         options:
-          - jco
-          - js-component-bindgen
-          - preview2-shim
+          - js/example-js
         description: |
-          Project to tag for release (ex. `0.1.0`)
+          Project to tag for release (ex. `js/example-js`)
 
       ref:
         type: string
         required: true
         description: |
-          Repository ref to tag (e.x. 'branch', 'jco-v0.1.0', '<long SHA>')
+          Repository ref to tag (e.x. 'branch', 'example-js-v0.1.0', '<long SHA>')
 
       version:
         type: string
