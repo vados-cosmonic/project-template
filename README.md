@@ -1,4 +1,4 @@
-# Project Template
+# 📦 Project Templates
 
 This repository serves as a template for creating projects with a few features as standard:
 
@@ -29,8 +29,8 @@ For more information on automated CI, see `docs/meta/automated-releases.md`.
 
 Currently the following languages are explicitly supported by this template
 
-- [Rust][rust]
-- [NodeJS][nodejs]
+- [Rust][rust] (see [`rust`](./rust))
+- [NodeJS][nodejs] (see [`js`](./js))
 
 While languages not listed above may work reasonably well, most scripts are tailored towards one of the languages above,
 and thus need to be either removed or modified.
