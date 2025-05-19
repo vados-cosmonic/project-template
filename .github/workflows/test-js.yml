@@ -1,4 +1,4 @@
-name: test
+name: test-js
 
 on:
   merge_group:
@@ -25,8 +25,8 @@ jobs:
 
       - name: Cache npm install
         id: cache-node-modules
-        working-directory: js
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+        working-directory: js
         with:
           key: node-modules-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('js/package-lock.json') }}
           path: |
