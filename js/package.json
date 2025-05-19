@@ -6,10 +6,12 @@
   "scripts": {
     "build": "npm run build --ws",
     "lint": "npm run lint --ws --if-present",
-    "lint:fix": "npm run lint --ws --if-present -- --fix"
+    "lint:fix": "npm run lint --ws --if-present -- --fix",
+    "test": "npm run test --ws"
   },
   "devDependencies": {
     "eslint": "^9.27.0",
-    "eslint-plugin-prettier": "^5.4.0"
+    "eslint-plugin-prettier": "^5.4.0",
+    "vitest": "^3.1.4"
   }
 }
