@@ -65,7 +65,7 @@ jobs:
         with:
           key: node-modules-dev-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('js/package-lock.json') }}
           path: |
-            node_modules
+            js/node_modules
       - name: Install debug NPM packages
         if: ${{ startsWith(inputs.project, 'js/') }}
         run: |
