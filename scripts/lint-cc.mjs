@@ -5,7 +5,7 @@ import load from "@commitlint/load";
 import lint from "@commitlint/lint";
 import read from "@commitlint/read";
 
-import { default as config } from "../commitlint.config.mjs";
+import { default as config } from "../js/commitlint.config.mjs";
 
 /**
  * Entrypoint that performs conventional commit checks on this repository

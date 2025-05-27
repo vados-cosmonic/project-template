@@ -42,7 +42,7 @@ jobs:
           COMMITLINT_START_REF: ${{ github.event.pull_request.base.sha || 'HEAD^' }}
           COMMITLINT_END_REF: ${{ github.event.pull_request.head.sha || 'HEAD' }}
         run: |
-          node scripts/lint-cc.mjs
+          node lint-cc.mjs
 
       - name: Create CC fix comment
         if: ${{ steps.cc.outputs.fail == 'true' }}
