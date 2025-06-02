@@ -21,7 +21,7 @@ const config = {
         "test",
       ],
     ],
-    "scope-enum": [1, "always", ["example-js"]],
+    "scope-enum": [1, "always", ["example-js", "deps"]],
     "scope-case": [2, "always", "lower-case"],
   },
 };
