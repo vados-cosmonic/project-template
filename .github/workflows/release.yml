@@ -245,7 +245,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: taiki-e/install-action@6e092deb71cc9ba464addeccefe34c0d06921585 # v2.58.31
+      - uses: taiki-e/install-action@1dd4d60a583436c5738af3d204f159f44d92f704 # v2.61.0
         with:
           fallback: none
           tool: git-cliff
