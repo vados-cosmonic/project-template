@@ -3,13 +3,13 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'daily'
+      interval: 'monthly'
 
   - package-ecosystem: 'npm'
     directories:
       - 'js/packages/**'
     schedule:
-      interval: "daily"
+      interval: "monthly"
     # schedule:
     #   interval: 'weekly'
     #   day: 'monday'
@@ -20,7 +20,7 @@ updates:
     directories:
       - '/rust/crates/*'
     schedule:
-      interval: "daily"
+      interval: "monthly"
     # schedule:
     #   interval: 'weekly'
     #   day: 'monday'
